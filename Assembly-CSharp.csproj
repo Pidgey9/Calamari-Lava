@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\CameraFixed.cs" />
     <Compile Include="Assets\PlayerMove.cs" />
+    <Compile Include="Assets\LavaUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
