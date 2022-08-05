@@ -644,6 +644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   rspeed: 500
+  maxrota: 200
 --- !u!50 &1458904110
 Rigidbody2D:
   serializedVersion: 4
