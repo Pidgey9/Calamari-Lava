@@ -4119,7 +4119,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Environment_204: 86120004
+      Environment_215: 187171006
       Environment_76: -2086566868
       Environment_251: -891622820
       Environment_27: 536541848
@@ -4152,9 +4152,9 @@ TextureImporter:
       Environment_259: -951679506
       Environment_35: -1257046783
       Environment_39: 1920181095
-      Environment_33: 797205166
-      Environment_227: -1882565283
       Environment_42: 93272594
+      Environment_227: -1882565283
+      Environment_33: 797205166
       Environment_133: -171076465
       Environment_128: 462469159
       Environment_104: 938316258
@@ -4387,8 +4387,8 @@ TextureImporter:
       Environment_18: 1532808320
       Environment_77: 1815408731
       Environment_234: -746330215
-      Environment_215: 187171006
       Environment_10: 1180319466
+      Environment_204: 86120004
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

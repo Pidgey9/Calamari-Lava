@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Lava
+  - Level
   layers:
   - Default
   - TransparentFX
