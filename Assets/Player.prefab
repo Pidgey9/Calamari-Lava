@@ -182,9 +182,10 @@ GameObject:
   - component: {fileID: 3226514946745783647}
   - component: {fileID: 7760860994304740251}
   - component: {fileID: 2036022797807805064}
+  - component: {fileID: 7734082708458779780}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +225,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &4415211663843590916
 MonoBehaviour:
@@ -285,6 +286,66 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   increment: 0
+--- !u!114 &7734082708458779780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415211663843590918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4df83ab626c3a4ba124f09d6e31f0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {x: 0, y: 0}
+  push: {x: 0, y: 0}
+  force: 3000
+  bumpCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -4.5057096
+      outSlope: -4.5057096
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.117598
+      value: 0.47013757
+      inSlope: -2.7962399
+      outSlope: -2.7962399
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.49150997
+      value: 0.06378132
+      inSlope: -0.09908611
+      outSlope: -0.09908611
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.366821
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.12543279
+      outSlope: -0.12543279
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  bumpDuration: 2
+  question: {x: 0, y: 0}
+  bam: 0
 --- !u!1 &6330256768006573734
 GameObject:
   m_ObjectHideFlags: 0

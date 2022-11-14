@@ -8,18 +8,18 @@ public class LavaOver : MonoBehaviour
     float count;
     public float timeDispawn;
     bool lavaTouch;
+    Rigidbody2D rb;
     private void Awake()
     {
         count = 0;
         lavaTouch = false;
+        rb = GetComponent<Rigidbody2D>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Lava"))
         {
             lavaTouch = true;
-            GameObject.Find("Player").GetComponent<Move>().enabled = false;
-            GameObject.Find("Player").GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
     private void Update()
@@ -32,6 +32,11 @@ public class LavaOver : MonoBehaviour
         {
             Destroy(gameObject);
             GameObject.Find("Game Over").GetComponent<TextMeshProUGUI>().enabled = true;
+        }
+        if (lavaTouch)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            GetComponent<Move>().enabled = false;
         }
     }
 }
