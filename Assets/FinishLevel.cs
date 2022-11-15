@@ -6,9 +6,13 @@ public class FinishLevel : MonoBehaviour
 {
     public Transform[] Spawn;
     public int increment;
+    public VarFloat timer;
+    bool stopTime;
     private void Awake()
     {
         increment = 0;
+        timer.value = 0;
+        stopTime = false;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,5 +28,9 @@ public class FinishLevel : MonoBehaviour
                 increment++;
             }
         }
+    }
+    private void Update()
+    {
+        if (!stopTime) timer.value += Time.deltaTime;
     }
 }

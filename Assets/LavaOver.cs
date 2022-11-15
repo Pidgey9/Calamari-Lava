@@ -9,6 +9,7 @@ public class LavaOver : MonoBehaviour
     public float timeDispawn;
     bool lavaTouch;
     Rigidbody2D rb;
+    public VarByte hp;
     private void Awake()
     {
         count = 0;
@@ -30,8 +31,7 @@ public class LavaOver : MonoBehaviour
         }
         if (count > timeDispawn)
         {
-            Destroy(gameObject);
-            GameObject.Find("Game Over").GetComponent<TextMeshProUGUI>().enabled = true;
+            hp.value = 0;
         }
         if (lavaTouch)
         {
