@@ -8,6 +8,7 @@ public class FinishLevel : MonoBehaviour
     public int increment;
     public VarFloat timer;
     bool stopTime;
+    public VarByte hp;
     private void Awake()
     {
         increment = 0;
@@ -25,6 +26,10 @@ public class FinishLevel : MonoBehaviour
             else
             {
                 transform.position = Spawn[increment].position;
+                hp.value = 3;
+                // To avoid bugs
+                GetComponent<TakeDamage>().invincible = false;
+                GetComponent<TakeDamage>().stuck = 0;
                 increment++;
             }
         }

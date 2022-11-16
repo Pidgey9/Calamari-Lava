@@ -61,6 +61,7 @@
     <Compile Include="Assets\FinishLevel.cs" />
     <Compile Include="Assets\LavaMove.cs" />
     <Compile Include="Assets\BumpCollider.cs" />
+    <Compile Include="Assets\SlowDown.cs" />
     <Compile Include="Assets\VarByte.cs" />
     <Compile Include="Assets\TakeDamage.cs" />
     <Compile Include="Assets\CoinDisplay.cs" />
@@ -68,7 +69,6 @@
     <Compile Include="Assets\Move.cs" />
     <Compile Include="Assets\VarFloat.cs" />
     <Compile Include="Assets\LavaOver.cs" />
-    <Compile Include="Assets\SlowDown.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -348,6 +348,12 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
