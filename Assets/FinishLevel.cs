@@ -30,6 +30,7 @@ public class FinishLevel : MonoBehaviour
                 // To avoid bugs
                 GetComponent<TakeDamage>().invincible = false;
                 GetComponent<TakeDamage>().stuck = 0;
+                GameObject.Find("Capsule").GetComponent<SpriteRenderer>().enabled = true;
                 increment++;
             }
         }
