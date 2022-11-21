@@ -25,4 +25,13 @@ public class Move : MonoBehaviour
         rb.velocity = move * speed * Time.fixedDeltaTime;
         rb.angularVelocity = h * angle * Time.fixedDeltaTime;
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Finish"))
+        {
+            byte i = 0;
+            if (i > 100) Destroy(gameObject);
+            i++;
+        }
+    }
 }

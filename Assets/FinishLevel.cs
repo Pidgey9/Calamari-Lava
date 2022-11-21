@@ -6,14 +6,15 @@ public class FinishLevel : MonoBehaviour
 {
     public Transform[] Spawn;
     public int increment;
-    public VarFloat timer;
-    bool stopTime;
     public VarByte hp;
+    public GameObject[] lava;
     private void Awake()
     {
         increment = 0;
-        timer.value = 0;
-        stopTime = false;
+    }
+    private void Start()
+    {
+        lava[increment].GetComponent<LavaMove>().enabled = true;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,11 +33,9 @@ public class FinishLevel : MonoBehaviour
                 GetComponent<TakeDamage>().stuck = 0;
                 GameObject.Find("Capsule").GetComponent<SpriteRenderer>().enabled = true;
                 increment++;
+                lava[increment].GetComponent<LavaMove>().enabled = true;
+                Destroy(lava[increment - 1]);
             }
         }
-    }
-    private void Update()
-    {
-        if (!stopTime) timer.value += Time.deltaTime;
     }
 }
