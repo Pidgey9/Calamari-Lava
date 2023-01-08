@@ -41,6 +41,7 @@ public class TakeDamage : MonoBehaviour
         {
             Destroy(gameObject);
             GameObject.Find("Game Over").GetComponent<TextMeshProUGUI>().enabled = true;
+            GameObject.Find("Restart").GetComponent<TextMeshProUGUI>().enabled = true;
         }
         if (invincible)
         {

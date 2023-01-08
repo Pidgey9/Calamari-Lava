@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 7760860994304740251}
   - component: {fileID: 2036022797807805064}
   - component: {fileID: 7734082708458779780}
+  - component: {fileID: 2099115928466379613}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -267,6 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDispawn: 3
+  hp: {fileID: 11400000, guid: 7b40e195639a94848a29093ab30f1885, type: 2}
 --- !u!114 &2036022797807805064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +288,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   increment: 0
+  hp: {fileID: 11400000, guid: 7b40e195639a94848a29093ab30f1885, type: 2}
+  lava:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &7734082708458779780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +356,24 @@ MonoBehaviour:
   bumpDuration: 2
   question: {x: 0, y: 0}
   bam: 0
+--- !u!114 &2099115928466379613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415211663843590918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5d0e9ea74c08343bcb8ec4753398d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: {fileID: 11400000, guid: 7b40e195639a94848a29093ab30f1885, type: 2}
+  invincible: 0
+  invTimer: 3
+  spriteTimer: 3
+  disp: 0
+  stuck: 0
 --- !u!1 &6330256768006573734
 GameObject:
   m_ObjectHideFlags: 0

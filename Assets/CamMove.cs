@@ -13,6 +13,6 @@ public class CamMove : MonoBehaviour
             transform.position = GameObject.Find("Player").transform.position + Vector3.back * range;
         }
         catch { }
-        if (!GameObject.Find("Player") && Input.GetKey(KeyCode.Space)) SceneManager.LoadScene(0);
+        if (!GameObject.Find("Player") && Input.GetKey(KeyCode.Space)) SceneManager.LoadScene(1);
     }
 }

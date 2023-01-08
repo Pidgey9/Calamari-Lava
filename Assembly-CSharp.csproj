@@ -67,8 +67,10 @@
     <Compile Include="Assets\CoinDisplay.cs" />
     <Compile Include="Assets\CamMove.cs" />
     <Compile Include="Assets\Move.cs" />
+    <Compile Include="Assets\WinTimer.cs" />
     <Compile Include="Assets\VarFloat.cs" />
     <Compile Include="Assets\LavaOver.cs" />
+    <Compile Include="Assets\StartGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

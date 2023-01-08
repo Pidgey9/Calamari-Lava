@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class FinishLevel : MonoBehaviour
@@ -8,6 +9,7 @@ public class FinishLevel : MonoBehaviour
     public int increment;
     public VarByte hp;
     public GameObject[] lava;
+    public VarByte coinCollector;
     private void Awake()
     {
         increment = 0;
@@ -23,6 +25,13 @@ public class FinishLevel : MonoBehaviour
             if (increment >= Spawn.Length)
             {
                 Destroy(gameObject);
+                GameObject.Find("Restart").GetComponent<TextMeshProUGUI>().enabled = true;
+                GameObject.Find("Win").GetComponent<TextMeshProUGUI>().enabled = true;
+                if (coinCollector.value >= 30)
+                {
+                    GameObject.Find("Score").GetComponent<TextMeshProUGUI>().enabled = true;
+                    GameObject.Find("Win Timer").GetComponent<TextMeshProUGUI>().enabled = true;
+                }
             }
             else
             {
